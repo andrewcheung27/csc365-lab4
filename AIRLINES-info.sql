@@ -59,7 +59,6 @@ WHERE d_flights.Airline = d_airlines.Id
 USE `AIRLINES`;
 -- Q5
 SELECT DISTINCT del_flights.Source AS Code
--- join the flights/airlines for each of the 5 airlines
 FROM flights AS del_flights, airlines AS del,
     flights AS fr_flights, airlines AS fr,
     flights AS us_flights, airlines AS us,
