@@ -37,11 +37,12 @@ USE `CARS`;
 -- Q4
 SELECT carmakers.Maker AS CarMaker, makes.Make AS CarName
 FROM makes, cardata, models, carmakers
-WHERE makes.Id = cardata.Id AND makes.Model = models.Model AND models.Maker = carmakers.Id
+WHERE makes.Id = cardata.Id
+    AND makes.Model = models.Model AND models.Maker = carmakers.Id
     AND cardata.Cylinders != 4
-    AND cardata.Year = 1977
+    AND cardata.Year = 1979
     AND cardata.MPG > 20
-    AND cardata.Accelerate > 13;
+    AND cardata.Accelerate < 18;
 
 
 USE `CARS`;
